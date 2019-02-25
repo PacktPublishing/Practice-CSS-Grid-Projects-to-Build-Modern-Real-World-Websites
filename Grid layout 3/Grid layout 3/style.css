@@ -1,0 +1,82 @@
+body {
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+#container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-auto-rows: minmax(50px, auto);
+	grid-template-areas: 
+		"header header header header header header"
+		"header header header header header header"
+		"nav nav nav nav nav nav"
+		"blog1 blog1 blog1 blog1 signup signup"
+		"blog1 blog1 blog1 blog1 signup signup"
+		"blog1 blog1 blog1 blog1 feature feature"
+		"blog2 blog2 blog2 blog2 feature feature"
+		"blog2 blog2 blog2 blog2 bio bio"
+		"blog2 blog2 blog2 blog2 bio bio"
+		"blog3 blog3 blog3 blog3 bio bio"
+		"blog3 blog3 blog3 blog3 banner1 banner2"
+		"blog3 blog3 blog3 blog3 social social"
+		"footer footer footer footer footer footer";
+	grid-gap: 15px;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+header,nav,aside,article,footer {
+	border: 1px solid black;
+	padding: 25px;
+	background-color: darkgrey;
+}
+
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: nav;
+}
+
+#blog1 {
+	grid-area: blog1;
+}
+
+#blog2 {
+	grid-area: blog2;
+}
+
+#blog3 {
+	grid-area: blog3;
+}
+
+#signup {
+	grid-area: signup;
+}
+
+#feature {
+	grid-area: feature;
+}
+
+#bio {
+	grid-area: bio;
+}
+
+#banner1 {
+	grid-area: banner1;
+}
+
+#banner2 {
+	grid-area: banner2;
+}
+
+#social {
+	grid-area: social;
+}
+
+footer {
+	grid-area: footer;
+}

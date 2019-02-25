@@ -1,0 +1,132 @@
+* {
+	font-family: Verdana;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #F5F5F5;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	grid-auto-rows: minmax(50px,auto);
+	grid-template-areas: 
+		"header header header header"
+		"header header header header"
+		"nav nav nav nav"
+		"article article article aside"
+		"article article article aside"
+		"article article article aside"
+		"article article article aside"
+		"footer footer footer footer";
+	max-width: 960px;
+	margin: 0 auto;
+	border: 2px solid black;
+}
+
+header {
+	grid-area: header;
+}
+
+header img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+#menu1 {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	background-color: #212121;
+	grid-area: nav;
+}
+
+#menu1 div, #menu2 div {
+	border: 1px solid #F5F5F5;
+	padding: 0;
+	margin: 0;
+}
+
+#menu1 div a, #menu2 div a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	padding: 15px;
+	font-weight: bold;
+	height: 100%;
+}
+
+#menu1 div a:hover, #menu2 div a:hover {
+	background-color: #757575;
+}
+
+article {
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+	padding: 10px;
+	grid-area: article;
+}
+
+article p {
+	font-family: Georgia;
+	font-size: 20px;
+}
+
+article h1 {
+	font-size: 50px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+aside {
+	border-top: 2px solid black;
+	padding: 10px;
+	grid-area: aside;
+}
+
+aside h2 {
+	font-size: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+aside p {
+	font-family: Georgia;
+	font-size: 16px;
+}
+
+footer {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-auto-rows: auto;
+	justify-content: space-between;
+	background-color: #212121;
+	border-top: 2px solid black;
+	padding-right: 0;
+	grid-area: footer;
+}
+
+footer p {
+	font-weight: bold;
+	color: white;
+	padding: 15px;
+}
+
+footer div a {
+	border-top: none;
+	border-bottom: none;
+}
+
+footer #menu2 div a:last-child {
+	border-right: none;
+}
+
+#menu2 {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	background-color: #212121;
+}
