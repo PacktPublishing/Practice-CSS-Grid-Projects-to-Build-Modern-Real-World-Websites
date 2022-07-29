@@ -1,0 +1,17 @@
+Projects and examples you could try out
+
+Congrats! You've finished the course. I'm really proud of you. 
+
+Now that you know how animations work in CSS, and you've created some animations, along with a mini project, why don't you expand your knowledge and create more animations? 
+
+I'll be updating this course with new projects over the next few months, but in the mean time, I'd like if you try creating some projects on your own as well. You could share them with me in the Q/A section, and I'd love to give you further inputs.
+
+Here are some suggestions.:
+
+1. Let's start small. Try changing the animation properties on the examples we already created. Change the properties you're animating, their values and so on. Let your imagination run wild! 
+
+2. You already know how to make HTML properties move from one place to another (Hint: keyframes and transformations - translation property). Why don't you try creating an illusion of a moving car or a moving object? You could download the image of a car/bike, place it on your web page, and animate it. It's a pretty simple process. 
+
+3. Go further and try creating animated cards that flip flop, animated popups and a lot more. The sky is the limit!
+
+There you go. Some ideas to try out. I'll be uploading new projects as well, in order to stimulate your mind further and make you apply what you've learned in this course. Stay tuned! 

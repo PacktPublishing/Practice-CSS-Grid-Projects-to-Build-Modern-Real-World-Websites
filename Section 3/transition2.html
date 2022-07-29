@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Transition examples 2</title>
+	<style>
+		#button1, #button2, #button3, #button4, #button5 {
+			width: 150px;
+			height: 50px;
+			font-size: 30px;
+			background-color: lightblue;
+		}
+
+		#button1 {
+			transition: width 2s;
+			transition-timing-function: ease;
+		}
+
+		#button2 {
+			transition: width 4s;
+			transition-timing-function: linear;
+		}
+
+		#button3 {
+			transition: width 4s;
+			transition-timing-function: ease-in;
+		}
+
+		#button4 {
+			transition: width 4s;
+			transition-timing-function: ease-out;
+		}
+
+		#button5 {
+			transition: width 4s;
+			transition-timing-function: ease-in-out;
+		}
+
+		#button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover {
+			width: 300px;
+		} 
+	</style>
+</head>
+
+<body>
+	<button id="button1">Click me! </button> <br/> <br/>
+	<button id="button2">Click me! </button> <br/> <br/>
+	<button id="button3">Click me! </button> <br/> <br/>
+	<button id="button4">Click me! </button> <br/> <br/>
+	<button id="button5">Click me! </button>		
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Keyframe Animation examples</title>
+	<style>
+		div {
+			margin: 200px auto;
+			width: 300px;
+			height: 100px;
+			background-color: yellow;
+			border: 1px solid black;
+			animation: backgroundChange 10s linear infinite both;
+		}
+
+		@keyframes backgroundChange {
+			0% { background-color: yellow; width: 300px; height: 100px; }
+			25% { background-color: red;  width: 600px; height: 100px;}
+			50% { background-color: blue; width: 300px; height: 200px;}
+			75% { background-color: brown; width: 600px; height: 100px;}
+			100% { background-color: green; width: 300px; height: 200px;}
+		} 
+
+
+
+	</style>
+</head>
+
+<body>
+	<div id="exampleDiv"></div>		
+</body>
+</html>
