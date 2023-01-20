@@ -12,7 +12,7 @@ html {
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
-	grid-auto-rows: minmax(50px,auto);
+	grid-auto-rows: minmax(50px,auto);                  /* Auto adjust by the Content size */
 	grid-template-areas: 
 		"header header header header"
 		"header header header header"
@@ -24,7 +24,6 @@ html {
 		"footer footer footer footer";
 	max-width: 960px;
 	margin: 0 auto;
-	border: 2px solid black;
 }
 
 header {
@@ -45,7 +44,6 @@ header img {
 }
 
 #menu1 div, #menu2 div {
-	border: 1px solid #F5F5F5;
 	padding: 0;
 	margin: 0;
 }
@@ -65,8 +63,7 @@ header img {
 }
 
 article {
-	border-right: 2px solid black;
-	border-top: 2px solid black;
+	border-right: 1px solid black;
 	padding: 10px;
 	grid-area: article;
 }
@@ -83,7 +80,6 @@ article h1 {
 }
 
 aside {
-	border-top: 2px solid black;
 	padding: 10px;
 	grid-area: aside;
 }
@@ -102,10 +98,8 @@ aside p {
 footer {
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
-	grid-auto-rows: auto;
 	justify-content: space-between;
 	background-color: #212121;
-	border-top: 2px solid black;
 	padding-right: 0;
 	grid-area: footer;
 }
@@ -117,8 +111,7 @@ footer p {
 }
 
 footer div a {
-	border-top: none;
-	border-bottom: none;
+	
 }
 
 footer #menu2 div a:last-child {
